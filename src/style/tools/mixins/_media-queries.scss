@@ -25,7 +25,8 @@
     }
   }
 
-  @media #{$media-type} #{$expr} {
+  // 这里报错了。。2024年6月24
+  @media #{$media-type} and #{$expr} {
     @content;
   }
 }
@@ -266,10 +267,10 @@
     ( phone-landscape,    30rem,   37.5rem, 1 ),
     // smartphones, Android phones, landscape iPhone
     ( phone-landscape-r,  30rem,   37.5rem, 2 ),
-    // portrait tablets, portrait iPad, e-readers (Nook/Kindle), 
+    // portrait tablets, portrait iPad, e-readers (Nook/Kindle),
     // landscape 800x480 phones (Android)
     ( table-portrait,     37.5rem, 50rem,   1 ),
-    // portrait tablets, portrait iPad, e-readers (Nook/Kindle), 
+    // portrait tablets, portrait iPad, e-readers (Nook/Kindle),
     // landscape 800x480 phones (Android)
     ( table-portrait-r,   37.5rem, 50rem,   2 ),
     // tablet, landscape iPad, lo-res laptops ands desktops
